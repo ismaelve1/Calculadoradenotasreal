@@ -1,16 +1,25 @@
-# This is a sample Python script.
-
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def media(lista_notas):
+    """Devuelve la media aritmética de una lista de notas."""
+    if not lista_notas:
+        raise ValueError("La lista de notas no puede estar vacía")
+    return sum(lista_notas) / len(lista_notas)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def calificacion(nota):
+    """Devuelve la calificación en texto de una nota numérica."""
+    if nota < 5:
+        return "Insuficiente"
+    elif nota < 6:
+        return "Suficiente"
+    elif nota < 7:
+        return "Bien"
+    elif nota < 9:
+        return "Notable"
+    return "Sobresaliente"
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+"""commit1"""
+if __name__ == "__main__":
+    notas = [6.5, 7, 8.25, 5]
+    m = media(notas)
+    print(f"Media: {m:.2f}")
+    print(f"Calificación: {calificacion(m)}")
