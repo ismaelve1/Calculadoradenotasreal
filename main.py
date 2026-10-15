@@ -17,7 +17,7 @@ def calificacion(nota):
         return "Notable"
     return "Sobresaliente"
 
-"""commit1"""
+"""commit2"""
 if __name__ == "__main__":
     notas = [6.5, 7, 8.25, 5]
     m = media(notas)
