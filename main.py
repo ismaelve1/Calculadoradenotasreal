@@ -26,4 +26,4 @@ if __name__ == "__main__":
     print(f"Media: {m:.2f}")
     print(f"Calificación: {calificacion(m)}")
 
-print(f"Nota media: {m:.1f}")
+print(f"Media del grupo: {m:.2f}")
