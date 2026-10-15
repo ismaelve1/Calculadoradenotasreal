@@ -4,6 +4,8 @@ def media(lista_notas):
         raise ValueError("La lista de notas no puede estar vacía")
     return sum(lista_notas) / len(lista_notas)
 
+    pesos = [0.2, 0.2, 0.4, 0.2]
+    print(f"Media ponderada: {media_ponderada(notas, pesos):.2f}")
 
 def calificacion(nota):
     """Devuelve la calificación en texto de una nota numérica."""
