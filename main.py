@@ -27,3 +27,10 @@ if __name__ == "__main__":
     print(f"Calificación: {calificacion(m)}")
 
 print(f"Media del grupo: {m:.2f}")
+
+def nota_maxima(notas):
+    return max(notas)
+
+
+def nota_minima(notas):
+    return min(notas)
